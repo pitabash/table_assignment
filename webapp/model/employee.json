@@ -1,0 +1,52 @@
+{
+	"empTab" : [
+			{
+				"empNo":"100",
+				"empName":"Devender",
+				"salary" : "50000",
+				"currency":"USD",
+				"gender" : "male",
+				"company" : "wipro"
+			},
+			{
+				"empNo":"200",
+				"empName":"Pitabash",
+				"salary" : "30000",
+				"currency":"INR",
+				"gender" : "male",
+				"company" : "wipro"
+			},
+			{
+				"empNo":"300",
+				"empName":"Varsha",
+				"salary" : "20000",
+				"currency":"USD",
+				"gender" : "female",
+				"company" : "wipro"
+			},
+			{
+				"empNo":"400",
+				"empName":"Satadal",
+				"salary" : "40000",
+				"currency":"USD",
+				"gender" : "male",
+				"company" : "wipro"
+			},
+			{
+				"empNo":"500",
+				"empName":"Tiyas",
+				"salary" : "35000",
+				"currency":"USD",
+				"gender" : "male",
+				"company" : "wipro"
+			},
+			{
+				"empNo":"600",
+				"empName":"Aritra",
+				"salary" : "45000",
+				"currency":"USD",
+				"gender" : "male",
+				"company" : "wipro"
+			}
+		]
+}

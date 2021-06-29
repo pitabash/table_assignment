@@ -1,0 +1,50 @@
+<mvc:View xmlns:table="sap.ui.table"
+    controllerName="wipro.tableassignment.controller.Overview"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <table:Table rows="{/empTab}" visibleRowCount="6" selectionMode="Single"
+                                     rowSelectionChange="onRowSelect">
+                            <table:columns>
+                                <table:Column>
+                                    <table:label>
+                                        <Label text="Emp No" design="Bold"></Label>
+                                    </table:label>
+                                    <table:template>
+                                        <Text text="{empNo}"></Text>
+                                    </table:template>
+                                </table:Column>
+                                
+                                <table:Column>
+                                    <table:label>
+                                        <Label text="Emp Name" design="Bold"></Label>
+                                    </table:label>
+                                    <table:template>
+                                        <Text text="{
+                                            path:'empName',
+                                            formatter:'.formatter.getMeName'
+                                        }"></Text>
+                                    </table:template>
+                                </table:Column>
+
+                                <table:Column>
+                                    <table:label>
+                                        <Label text="Salary" design="Bold"></Label>
+                                    </table:label>
+                                    <table:template>
+                                        <Text text="{
+                                            parts: [{path:'salary'},{path:'currency'}],
+                                            formatter: '.formatter.getFormattedCurrency'
+                                        }"></Text>
+                                    </table:template>
+                                </table:Column>
+                            </table:columns>
+                        </table:Table>
+                        
+                    </content>
+				</Page>
+</mvc:View>

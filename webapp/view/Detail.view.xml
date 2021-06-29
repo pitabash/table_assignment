@@ -1,0 +1,26 @@
+<mvc:View xmlns:form="sap.ui.layout.form"
+    controllerName="wipro.tableassignment.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+				<Page id="page" title="{i18n>title}">
+					<content >
+                        <form:SimpleForm id="idForm">
+                            <Label text="Emp No"></Label>
+                            <Text text="{empNo}" id="idEmpNo" ></Text>
+                            <Label text="Emp Name"></Label>
+                            <Text text="{empName}" id="idName" ></Text>
+                            <Label text="Salary"></Label>
+                            <Text  id="idSal" text="{salary}" ></Text>
+                            <Label text="Currency"></Label>
+                            <Text  id="idCur" text="{currency}" ></Text>
+                            <Label text="Gender"></Label>
+                            <Text  id="idSex" text="{gender}" ></Text>
+                            <Label text="Company"></Label>
+                            <Text  id="idComp" text="{company}" ></Text>
+                        </form:SimpleForm>
+                        <Button text="Mntu" press="onPress"></Button>
+                    </content>
+				</Page>
+</mvc:View>
